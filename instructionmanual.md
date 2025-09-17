@@ -7,7 +7,7 @@ pip install numpy
 pip install scikit-learn
 ```
 
-Create a new file in your python compiler (PythonIDE, VSCODE, Google Colab) called 'streamlit.py' with the following code and don't forget to upload the RAW_recipes.csv on your project folder:
+Create a new file in your python compiler (PythonIDE, VSCode, Google Colab, Jupyter Notebook, etc) called 'streamlit.py' with the following code and don't forget to upload the RAW_recipes.csv on your project folder:
 
 ```python
 import streamlit as st
@@ -237,4 +237,5 @@ To run the streamlit, open the terminal on your compiler then type,
 streamlit run streamlit.py
 
 After it redirects you to a website, the website is ready to be used, for further instructions on how to use our apps, you can see our PPT or our videos regarding on how to use the 'Smart Recipe Recommender'
+
 
