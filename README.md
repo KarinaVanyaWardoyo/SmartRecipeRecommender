@@ -9,3 +9,5 @@ https://www.kaggle.com/datasets/rumitpathare/indian-recipes
 
 # Website Demo
 https://drive.google.com/drive/folders/1miK2n313r5xaEUnUl2itN2iGPtqMdH7S
+
+# ⚠️ PLEASE READ THE INSTRUCTION MANUAL ON HOW TO EXECUTE ⚠️
