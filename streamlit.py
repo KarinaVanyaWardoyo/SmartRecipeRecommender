@@ -43,7 +43,7 @@ class RecipeRecommender:
             raise
 
     def create_ingredient_vectorizer(self):
-        # Create TF-IDF vectorizer for ingredients, ngasi value ke TIAP ingredients semkain rare ingredients semakin tinggi valuene, dan bakal lebih diutamain di top recommendation
+        # Create TF-IDF vectorizer for ingredients, memberi value ke TIAP ingredients semakin rare ingredients semakin tinggi valuene, dan bakal lebih diutamain di top recommendation
         self.vectorizer = TfidfVectorizer()
         #creates tthe vector for the 'already assigned a value' ingredients
         self.ingredient_vectors = self.vectorizer.fit_transform(
@@ -62,7 +62,7 @@ class RecipeRecommender:
         #input jd vector
         input_vector = self.vectorizer.transform([input_ingredient_str])
 
-        # Calculate cosine similarity, input sm recipe diitung cos ny, cos 0-1 0 being not similar 1 being exactly similar
+        # Calculate cosine similarity, input sm recipe dihitung cos nya, cos 0-1, 0 being not similar 1 being exactly similar
         similarities = cosine_similarity(input_vector, self.ingredient_vectors)[0]
 
         # Get top N similar recipes
@@ -218,4 +218,5 @@ def main():
         st.warning("Please enter your ingredients.")
 
 if __name__ == "__main__":
+
     main()
